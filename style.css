@@ -1,0 +1,14 @@
+body {
+  text-align: center;
+}
+
+* {
+  margin: 0 auto;
+}
+
+.game {
+  background: url('./img/background.png') center/cover;
+  width: 50em;
+  height: 30em;
+  margin-top: 4rem;
+}
