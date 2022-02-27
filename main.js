@@ -97,6 +97,7 @@ function updateTimerWithText(time) {
 function showPopUpWithText(text) {
   popUp.classList.remove('popUp--hide');
   popUpText.innerText = text;
+  hideGameButton();
 }
 
 function hidePopUp() {
