@@ -60,6 +60,7 @@ function stopGame() {
 function finishGame(win) {
   started = false;
   stopGameTimer();
+  hideGameButton();
   stopSound(bgSound);
   if (win) {
     playSound(winSound);
