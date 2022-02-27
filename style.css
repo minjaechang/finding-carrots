@@ -48,6 +48,7 @@ button:hover {
   width: 5rem;
   border-radius: 0.3rem;
   user-select: none;
+  visibility: hidden;
 }
 
 .game__score {
@@ -60,6 +61,7 @@ button:hover {
   margin-top: 0.3rem;
   border-radius: 50%;
   user-select: none;
+  visibility: hidden;
 }
 
 .game__field {
