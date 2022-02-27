@@ -33,7 +33,7 @@ popUpReplay.addEventListener('click', () => {
 });
 
 function startGame() {
-  started = !started;
+  started = true;
   initGame();
   showStopButton();
   showTimerAndScore();
@@ -41,13 +41,14 @@ function startGame() {
 }
 
 function stopGame() {
-  started = !started;
+  started = false;
   stopGameTimer();
   hideGameButton();
   showPopUpWithText();
 }
 
 function showStopButton() {
+  gameButton.style.visibility = 'visible';
   const icon = gameButton.querySelector('.fa-solid');
   icon.classList.add('fa-stop');
   icon.classList.remove('fa-play');
@@ -99,6 +100,7 @@ function hidePopUp() {
 }
 
 function initGame() {
+  score = 0;
   gameField.innerHTML = '';
   gameScore.innerText = CARROT_COUNT;
   addItem('carrot', 5, 'img/carrot.png');
