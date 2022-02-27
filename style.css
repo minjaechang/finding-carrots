@@ -6,9 +6,48 @@ body {
   margin: 0 auto;
 }
 
+button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
 .game {
   background: url('./img/background.png') center/cover;
   width: 50em;
   height: 30em;
   margin-top: 4rem;
+}
+
+.game__header {
+  display: flex;
+  flex-direction: column;
+}
+
+.game__button {
+  font-size: 2rem;
+  background-color: wheat;
+  width: 3rem;
+  height: 3rem;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+}
+
+.game__timer {
+  font-size: 1.8rem;
+  background-color: white;
+  margin-top: 0.5rem;
+  width: 5rem;
+  border-radius: 0.3rem;
+}
+
+.game__score {
+  font-size: 1.8rem;
+  background-color: darksalmon;
+  color: whitesmoke;
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  margin-top: 0.3rem;
+  border-radius: 50%;
 }
