@@ -28,14 +28,18 @@ function addItem(className, count, imgPath) {
 
     item.style.position = 'absolute';
 
-    const x = Math.random() * (x2 - x1) + x1;
-    const y = Math.random() * (y2 - y1) + y1;
+    const x = randomNumber(x1, x2);
+    const y = randomNumber(y1, y2);
 
     item.style.left = x + 'px';
     item.style.top = y + 'px';
 
     gameField.append(item);
   }
+}
+
+function randomNumber(min, max) {
+  return Math.random() * (max - min) + min;
 }
 
 initGame();
