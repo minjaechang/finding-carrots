@@ -97,3 +97,14 @@ button:hover {
   margin-top: 0.5rem;
   user-select: none;
 }
+
+.carrot,
+.bug {
+  transition: all 100ms ease-in;
+}
+
+.carrot:hover,
+.bug:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
