@@ -36,8 +36,8 @@ gameButton.addEventListener('click', () => {
 });
 
 popUpReplay.addEventListener('click', () => {
-  startGame();
   hidePopUp();
+  startGame();
 });
 
 function startGame() {
