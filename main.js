@@ -1,8 +1,9 @@
 'use strict';
 
 const CARROT_SIZE = 80;
-const GAME_DURATION_SEC = 5;
-const CARROT_COUNT = 5;
+const GAME_DURATION_SEC = 10;
+const CARROT_COUNT = 20;
+const BUG_COUNT = 15;
 
 const gameButton = document.querySelector('.game__button');
 const gameTimer = document.querySelector('.game__timer');
@@ -122,8 +123,8 @@ function initGame() {
   score = 0;
   gameField.innerHTML = '';
   gameScore.innerText = CARROT_COUNT;
-  addItem('carrot', 5, 'img/carrot.png');
-  addItem('bug', 5, 'img/bug.png');
+  addItem('carrot', CARROT_COUNT, 'img/carrot.png');
+  addItem('bug', BUG_COUNT, 'img/bug.png');
 }
 
 function onGameFieldClick(event) {
